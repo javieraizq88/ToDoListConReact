@@ -1,16 +1,10 @@
 body{
-  background-color: black;
-}
-
-.card-body.icono {
-
+  background-color: rgb(188, 240, 247);
 }
 
 
 .contenedorGrande{
-  margin-top: 100px;
-  margin-left: 300px;
-  width: 400px;
-  height: 300px;
-
+  margin-top: 150px;
+  margin-left: 400px;
 }
+

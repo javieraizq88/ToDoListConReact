@@ -5,7 +5,6 @@ class Home extends Component {
     constructor() {
         super();
         this.state = {
-
         }
     }
 
@@ -16,12 +15,9 @@ class Home extends Component {
         }
     }
 
-nuevaTarea = () => {
-    return this.hanldeKeyDown () ;
-} 
-    // handleClick = () => (
-    //     this.setState
-    // )
+    nuevaTarea = () => {
+        return this.hanldeKeyDown();
+    }
 
     borrarTarea = () => {
         console.log("borrar esta tarea")
@@ -33,11 +29,9 @@ nuevaTarea = () => {
 
                 <div className="contenedorGrande justify-center col-4">
                     <div className="card" >
-                        <div className="card-header bg-transparent">To do</div>
-                        <div className="card-body text-success">
-
-<ListaToDo />
-                            
+                        <div className="card-header text-center bg-transparent"><h1>ToDo List</h1> </div>
+                        <div className="card-body ">
+                            <ListaToDo />
                         </div>
                     </div>
                 </div>

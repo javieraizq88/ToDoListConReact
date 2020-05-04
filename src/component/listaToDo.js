@@ -44,28 +44,30 @@ class ListaToDo extends Component {
                             className="form-control"
                             placeholder="Agregar tarea"
                             onKeyDown={(e) => this.agregarTarea(e)} />
-                        <div className="input-group-append" id="button-addon4">
-                            <button className="btn btn-outline-secondary" onClick={(i) => this.eliminarBoton(i)} type="button">Eliminar todas las tareas</button>
-                        </div>
                     </div>
+                    <br/>
                     {
                         this.state.tareas.length > 0 ? (
                             <ul className="list-group list-group-flush" id="list">
                                 {
                                     this.state.tareas.map((tarea, i) => {
                                         return (
-                                            <li>
-                                                {tarea}
-                                                <span><i className=" fa fa-times float-right" onClick={() => this.eliminarTarea(i)} ></i></span>
-                                            </li>
+                                            <div>
+                                                <span className="ml-2">{tarea}</span> 
+                                                <span><i className=" fa fa-times float-right mr-2" onClick={() => this.eliminarTarea(i)} ></i></span>
+                                            </div>
                                         )
                                     })
                                 }
                             </ul>
                         ) : (
-                                <p className="mb-0 ml-1">No quedan tareas</p>
+                                <p className="mb-0 ml-1 text-center text-primary">No quedan tareas  </p>
                             )
                     }
+                    <br/> 
+                    <div className="input-group-append" id="button-addon4">
+                        <button className="btn btn-danger" onClick={(i) => this.eliminarBoton(i)} type="button">Eliminar todas las tareas</button>
+                    </div>
                 </div>
             </>
         )
