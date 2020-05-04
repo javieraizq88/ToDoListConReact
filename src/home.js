@@ -35,13 +35,8 @@ nuevaTarea = () => {
                     <div className="card" >
                         <div className="card-header bg-transparent">To do</div>
                         <div className="card-body text-success">
-                            <input type="text" onKeyDown={this.hanldeKeyDown} />
 
-                            <ul className="list-group list-group-flush">
-                                <li className="list-group-item" onClick={this.borrarTarea}>kjbsdf</li>
-                                <li className="list-group-item">Dapibus ac facilisis in</li>
-                                <li className="list-group-item" >Vestibulum at eros</li>
-                            </ul>
+<ListaToDo />
                             
                         </div>
                     </div>
